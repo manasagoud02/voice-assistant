@@ -1,3 +1,1 @@
-hel
-hiii
-jghh
+print("hello")
