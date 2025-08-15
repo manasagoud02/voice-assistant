@@ -1,4 +1,6 @@
 from PIL import Image
+from IPython.display import display
+
 import matplotlib.pyplot as plt
 
 # Take image path from user
