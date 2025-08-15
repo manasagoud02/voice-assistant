@@ -1,15 +1,10 @@
 from PIL import Image
-from IPython.display import display
-
 import matplotlib.pyplot as plt
 
-# Take image path from user
-image_path = input("Enter image path: ")
+image_path = "/content/download.jpg"  # your file
+img = Image.open(image_path)
 
-# Open the image
-img = Image.open("/content/download.jpg")
-
-# Show inline in Colab
 plt.imshow(img)
 plt.axis('off')
-plt.show()
+plt.savefig("output_image.png")  # save instead of show
+print("Image saved as output_image.png")
